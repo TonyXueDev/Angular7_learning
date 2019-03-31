@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Welcome to {{ title }}!</h1>
+  此语法叫做Mustache语法，因为长得像八字胡子,关于 Mustache 语法，需要掌握以下 3 点：
+  <ul>
+    <li>它可以获取到组件里面定义的属性值</li>
+    <li>它可以自动计算简单的数学表达式，如加、减、乘、除、取模</li>
+    <li>它可以获得方法的返回值</li>
+  </ul>
+  <h2>例子：</h2>
+  <div>
+    1、插值语法关键代码实例：欢迎来到{{ title }}!
+  </div>
+  <div>
+    2、简单的数学表达式求值：{{ 1+1 }}
+  </div>
+  <div>
+    3、调用组件里定义的方法：{{ getVal() }}
+  </div>
+  <div>
+    属性绑定是用方括号来做的，写法如下：
+    <img [src]="imgSrc"/>
+  </div>
+
+  <div>
+    事件绑定是用圆括号来做的，写法如下：
+    <button class="btn btn-success" (click)="btnClick($event)">测试事件</button>
+  </div>
+</div>
+
+
+
